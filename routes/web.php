@@ -44,3 +44,7 @@ Route::get('/posts/{post}/articles/{id} ',
     function ($postId, $id) {
     return 'Pos ke-'.$postId." <br> Halaman Artikel dengan ID: ".$id;
 });
+
+Route::get('/user/{name?}', function ($name=null) {
+    return 'Haryo Mahendra Jati '.$name;
+});
