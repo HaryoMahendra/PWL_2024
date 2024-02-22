@@ -48,3 +48,4 @@ Route::get('/posts/{post}/articles/{id} ',
 Route::get('/user/{name?}', function ($name='John') {
     return 'Haryo Mahendra Jati '.$name;
 });
+
