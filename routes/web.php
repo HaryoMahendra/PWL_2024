@@ -53,3 +53,4 @@ Route::get('/hello', [WelcomeController::class,'hello']);
 
 Route::get('/welcome', 'PageController@index');
 
+Route::get('/about', 'PageController@about');
