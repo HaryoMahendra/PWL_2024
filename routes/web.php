@@ -50,3 +50,6 @@ Route::get('/user/{name?}', function ($name='John') {
 });
 
 Route::get('/hello', [WelcomeController::class,'hello']);
+
+Route::get('/about', 'PageController@index');
+
