@@ -49,8 +49,5 @@ Route::get('/user/{name?}', function ($name='John') {
     return 'Haryo Mahendra Jati '.$name;
 });
 
-Route::get('/hello', [WelcomeController::class,'hello']);
-
-Route::get('/welcome', 'PageController@index');
-
-Route::get('/about', 'PageController@about');
+use App\Http\Controllers\WelcomeController;
+Route::get('/hello', [WelcomeController::class, 'hello']);
