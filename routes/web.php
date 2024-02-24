@@ -40,7 +40,7 @@ Route::get('/posts/{post}/comments/{comment}',
     return 'Pos ke-'.$postId." Komentar ke-: ".$commentId;
 });
 
-Route::get('/posts/{post}/articles/{id} ', 
+Route::get('/posts/{post}/articles/{id}', 
     function ($postId, $id) {
     return 'Pos ke-'.$postId." <br> Halaman Artikel dengan ID: ".$id;
 });
@@ -53,7 +53,7 @@ use App\Http\Controllers\WelcomeController;
 Route::get('/hello', [WelcomeController::class, 'hello']);
 
 use App\Http\Controllers\PageController;
-Route::get('/index', [PageController::class, 'index']);
-
-//use App\Http\Controllers\PageController;
+//Route::get('/index', [PageController::class, 'index']);
 //Route::get('/about', [PageController::class, 'about']);
+Route::get('/articles/{id}', [PageController::class, 'articles']);
+
