@@ -5,7 +5,13 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function articles($id) {
-        $message = "Halaman Artikel dengan Id $id";
-        return view('articles', ['message' => $message]);
+        return "Halam Artikel Dengan ID ".$id;
+    }
+    public function about() {
+        return ('Nama : Haryo Mahendra Jati <br> NIM : 2141762037');
+    }
+    public function index() {
+        return ('Selamat Datang');
     }
 }
+
