@@ -6,4 +6,8 @@
         public function hello() {
             return 'Hello World';
         }
+
+        public function greeting(){
+            return view('blog.hello', ['name' => 'Haryo Mahendra Jati']);
+        }
     }
